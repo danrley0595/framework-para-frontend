@@ -39,13 +39,13 @@ button {
 #contato { margin-top: 18px; color: #2563eb; }
 
 @media (min-width: 600px) {
-  main { max-width: 600px; margin: auto; }
+  main { max-width: 600px; margin: auto; } /*Implementar medidas flexiveis*/
 }
 
 @media (min-width: 900px) {
-  main { max-width: 700px; }
+  main { max-width: 700px; } /*Implementar medidas flexiveis*/
 }
 
 @media (min-width: 1200px) {
-  main { max-width: 760px; }
+  main { max-width: 760px; } /*Implementar medidas flexiveis*/
 }
