@@ -1,0 +1,66 @@
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #1f2937;
+  background: #f4f7fb;
+}
+
+main {
+  width: 100%;
+  padding: 32px 22px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px #0002;
+}
+
+.foto {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 18px;
+  padding-top: 23px;
+  border-radius: 50%;
+  color: white;
+  background: #2563eb;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h1 { margin: 0; font-size: 28px; }
+h2 { color: #2563eb; font-size: 17px; font-weight: normal; }
+.info { color: #6b7280; font-size: 13px; }
+p { color: #4b5563; line-height: 1.6; }
+
+button {
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  background: #2563eb;
+  font: bold 16px Arial;
+  cursor: pointer;
+}
+
+button:hover { background: #1d4ed8; }
+#contato { min-height: 24px; margin-top: 18px; color: #2563eb; font-weight: bold; }
+
+@media (min-width: 600px) {
+  main { max-width: 600px; padding: 42px; }
+  h1 { font-size: 36px; }
+}
+
+@media (min-width: 900px) {
+  main { max-width: 700px; }
+  h1 { font-size: 42px; }
+}
+
+@media (min-width: 1200px) {
+  main { max-width: 760px; }
+}
