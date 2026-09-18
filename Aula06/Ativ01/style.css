@@ -1,0 +1,9 @@
+body {
+    background-color: lightblue;
+}
+
+@media (max-width: 601px) {
+  body {
+    background-color: lightgray; 
+  }
+}
