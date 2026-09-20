@@ -1,11 +1,10 @@
-img {
+.img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 @media (max-width: 500px) {
-  img {
+  .img {
     max-width: 80%; 
     margin: 0 auto;
   }
