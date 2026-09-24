@@ -1,0 +1,15 @@
+
+1 - Serve para declarar as variáveis da aplicação.
+
+2 - O valor da variável nome é exibido na tela, o que chamamos de interpolação.
+
+3 - Liga o input a uma variável, atualizando ambos ao mesmo tempo.
+
+4 - Executa uma ação quando clica no elemento.
+
+5 - O v-if mostra ou esconde um elemento; 
+    O v-for serve para criar listas repetindo elementos.
+
+6 - Significa que a página atualiza-se automaticamente sempre que o valor das variáveis muda.
+
+7 - Liga a aplicação Vue ao elemento HTML que tem o ID "app".
