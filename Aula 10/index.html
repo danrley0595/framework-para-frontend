@@ -59,7 +59,13 @@
 
         <input v-model="nomeTarefa" placeholder="Nome da Tarefa"><br>
         <input v-model="responsavel" placeholder="Responsável"><br>
-        <input v-model="prioridade" placeholder="Prioridade"><br>
+        <select v-model="prioridade">
+            <option value="" disabled selected>Selecione a Prioridade</option>
+            <option value="Alta">Alta</option>
+            <option value="Média">Média</option>
+            <option value="Baixa">Baixa</option>
+        </select>
+        <br><br>
 
         <button @click="adicionarTarefa">Adicionar</button><br>
 
