@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 8px;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-top: 6px;
+            padding: 6px;
+            background: #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-excluir {
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 2px 6px;
+            cursor: pointer;
+            width: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>Gerenciador de Tarefas</h1>
+
+        <input v-model="nomeTarefa" placeholder="Nome da Tarefa"><br>
+        <input v-model="responsavel" placeholder="Responsável"><br>
+        <input v-model="prioridade" placeholder="Prioridade"><br>
+
+        <button @click="adicionarTarefa">Adicionar</button><br>
+
+        <p>Total de tarefas: {{ tarefas.length }}</p>
+
+        <p v-if="tarefas.length === 0">
+            Nenhuma tarefa cadastrada.
+        </p>
+        <p v-if="tarefas.length > 0 && tarefas.length <= 3">
+            Você possui poucas tarefas.
+        </p>
+        <p v-if="tarefas.length > 3">
+            Você possui várias tarefas pendentes.
+        </p>
+
+        <ul v-show="tarefas.length > 0">
+            <li v-for="tar in tarefas">
+                <strong>{{ tar.nome }}</strong> - {{ tar.responsavel }} ({{ tar.prioridade }}) <button
+                    class="btn-excluir" @click="excluirTarefa(index)">Excluir</button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
